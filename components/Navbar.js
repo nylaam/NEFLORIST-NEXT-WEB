@@ -8,19 +8,19 @@ const Navbar = () => {
         <div className="flex flex-row justify-center lg:justify-between md:ml-20 gap-5 md:gap-7 mt-4">
             <div className='font-semibold text-2xl'>NEY FLORIST</div>
             <div className="flex flex-row justify-center md:mr-12 lg:justify-between items-center gap-4 md:gap-5">
-              <Link href='/' className="hover:text-[#7270dd] text-sm md:text-base font-semibold">
+              <Link href='/' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
                 Home 
               </Link>
-              <Link href='#values' className="hover:text-[#7270dd] text-sm md:text-base font-semibold">
+              <Link href='#values' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
                 Values 
               </Link>
-              <Link href='#product' className="hover:text-[#7270dd] text-sm md:text-base font-semibold">
+              <Link href='#product' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
                 Product 
               </Link>
-              <Link href='#moreinfo' className="hover:text-[#7270dd] text-sm md:text-base font-semibold">
+              <Link href='#moreinfo' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
                 More Info 
               </Link>
-              <Link href='#contact' className="hover:text-[#7270dd] text-sm md:text-base font-semibold">
+              <Link href='#contact' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
                 Contact 
               </Link>
             </div>
