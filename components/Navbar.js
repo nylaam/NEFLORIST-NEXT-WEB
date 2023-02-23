@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className=' bg-[#fff5f1] h-16 fixed left-0 w-full top-0'>
         <div className="flex flex-row justify-center lg:justify-between md:ml-20 gap-5 md:gap-7 mt-4">
-            <div className='font-semibold text-2xl'>FLORIST</div>
+            <div className='font-semibold text-2xl'>NEY FLORIST</div>
             <div className="flex flex-row justify-center md:mr-12 lg:justify-between items-center gap-4 md:gap-5">
               <Link href={'/'} className="hover:text-[#7270dd] text-sm md:text-base font-semibold">
                 Home 
