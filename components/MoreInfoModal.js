@@ -44,13 +44,13 @@ const MoreInfoModal = () => {
     <Disclosure key={i} >
         {({ open }) => (
           <div className='group'>
-            <Disclosure.Button className="flex flex-col group-hover:bg-[#524fd5] group-focus:bg-[#524fd5] w-full justify-between rounded-lg lg:rounded-full border border-gray-200 px-8 py-10 text-left text-sm font-medium  focus:outline-none ">
+            <Disclosure.Button className="flex flex-col group-hover:bg-[#a42b55] group-focus:bg-[#d0386d] w-full justify-between rounded-lg lg:rounded-full border border-gray-200 px-8 py-10 text-left text-sm font-medium  focus:outline-none ">
               <div className="flex justify-between items-center w-full">
               <span className='group-hover:text-white  group-focus:text-white'>{inf.title}</span>
               <BsFillPlusCircleFill
                 className={`${
                   open ? 'rotate-180 transform' : ''
-                }  text-[#524fd5] text-2xl group-hover:text-white  group-focus:text-white `}
+                }  text-[#a42b55] text-2xl group-hover:text-white  group-focus:text-white `}
               />
               </div>
            

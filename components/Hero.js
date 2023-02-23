@@ -17,7 +17,7 @@ const Hero = () => {
             <p className="text-sm sm:text-base lg:text-lg text-gray-500">
               Makes a bouquet and pick up a gift with <br  className="lg:flex hidden"/> your wishes. Deliver to any corner of the city
             </p>
-            <Link href={"#product"} className="btn btn-sm lg:btn-lg bg-[#524fd5] text-white rounded-full border-none w-36 lg:w-44 capitalize">Get Started</Link>
+            <Link href={"#product"} className="btn btn-sm lg:btn-lg bg-[#a42b55] text-white rounded-full border-none w-36 lg:w-44 capitalize">Get Started</Link>
           </div>
           <Image
           src={img}
