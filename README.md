@@ -29,6 +29,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://neyflorist-next.vercel.app/) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Ney Florist On Vercel](https://neyflorist-next.vercel.app/) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
