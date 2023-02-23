@@ -5,7 +5,7 @@ import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className="w-full">
-      <div className="bg-[#f8fafe] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10 px-20 py-10 rounded-3xl items-center">
+      <div className="bg-[#fff5f1] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 lg:gap-10 px-20 py-10 items-center">
         <div className="items-center lg:items-start gap-5">
           <div className="font-semibold md:text-left text-center text-2xl">NEY FLORIST </div>
           <p className="text-center lg:text-start">
