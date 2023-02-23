@@ -1,93 +1,95 @@
-import Link from "next/link"
-import React, { useState } from "react"
-import {FaBars, FaTimes} from 'react-icons/fa'
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
-    const links =[
-        {
-            id: 1,
-            name:'Home',
-            link: '/'
-        },
-        {
-            id: 2,
-            name: 'Values',
-            link: '#values'
-        },
-        {
-            id: 3,
-            name: "Product",
-            link: '#product'
-        },
-        {
-            id: 4,
-            name: "More Info",
-            link: '#moreinfo'
-        },
-        {
-          id: 5,
-          name: "Contact",
-          link: '#contact'
-      },
-    ]
-    return (
-    <>
-        <div className=' bg-[#fff5f1] h-16 fixed left-0 w-full top-0'>
-        <div className="flex flex-row justify-center lg:justify-between md:ml-20 gap-80 md:gap-7 mt-4">
-        <div className='font-semibold text-2xl'>NEY FLORIST</div>
+  const [nav, setNav] = useState(false);
+  const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('white');
 
-                <ul className="hidden md:flex gap-4 justify-between items-center px-14">
-                    <li>
-                    <Link href='/' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
-                            Home  
-                        </Link>
-                    </li>
-                    <li>
-                    <Link href='#values' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
-                            Values
-                        </Link>
-                    </li>
-                    <li>
-                    <Link href='#product' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
-                            Product
-                        </Link>
-                    </li>
-                    <li>
-                    <Link href='#moreinfo' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
-                            More Info
-                        </Link>
-                    </li>
-                    <li>
-                    <Link href='#contact' className="hover:text-[#d042ac] text-sm md:text-base font-semibold">
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
-                
-                
-                <div onClick={() => setNav(!nav)} className="block cursor-pointer md:hidden text-[24px] text-[#d042ac]  pr-4">
-                    {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-                </div>
-                    {nav && (
-                        <>
-                        <ul className="flex flex-col justify-center items-center absolute top-14 left-0 w-full h-200 bg-gradient-to-b from-pink-200 to-pink-200 text-white">
-                        {links.map(({id, name, link}) => (
-                                <li
-                                    key={id}
-                                    className="px-4 cursor-pointer capitalize py-4 text-2xl"
-                                    onClick={() => setNav(!nav)}
-                                >
-                                <Link href={link}>{name}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                        </>
-                    )}
-            </div>
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor('#fff5f1');
+        setTextColor('#000000');
+      } else {
+        setColor('transparent');
+        setTextColor('#000000');
+      }
+    };
+    window.addEventListener('scroll', changeColor);
+  }, []);
+
+  return (
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+    >
+      <div className='max-w-[1420px] m-auto flex justify-between items-center p-3 text-white'>
+        <Link href='/'>
+          <h1 style={{ color: `${textColor}` }} className='font-bold text-3xl'>
+            Ney Florist
+          </h1>
+        </Link>
+        <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
+          <li className='p-4'>
+            <Link href='/'>Home</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='#values'>Values</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='#product'>Product</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='#moreinfo'>More Info</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='#contact'>Contact</Link>
+          </li>
+        </ul>
+
+        {/* Mobile Button */}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
         </div>
-    </>
-    )
-}
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#ffcefe] text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#c39fba] text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/'>Home</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='#values'>Values</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='#product'>Product</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='#moreinfo'>More Info</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='#contact'>Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
