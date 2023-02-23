@@ -1,7 +1,5 @@
 import Link from "next/link"
 import React, { useState } from "react"
-
-import {HiOutlineDownload} from 'react-icons/hi'
 import {FaBars, FaTimes} from 'react-icons/fa'
 
 const Navbar = () => {

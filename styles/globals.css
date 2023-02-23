@@ -5,6 +5,6 @@
 *{
     font-family: 'Clash Display', sans-serif;
 }
-html:focus-within {
+html {
     scroll-behavior: smooth !important;
   }
