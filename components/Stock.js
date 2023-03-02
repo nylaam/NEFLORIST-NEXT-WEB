@@ -30,13 +30,13 @@ function Stock() {
   return (
     <>
       <div className="p-7 text-black z-[2] mt-20">
-        <h1 className="text-3xl font-bold  text-center">Products</h1>
+        <h1 className="text-3xl font-bold text-center">Products</h1>
+      </div>
+      <div>
+        <Link href="/favorite" className="bg-[#d3829f] text-white p-4 rounded-lg items-end">See all
+      </Link>
       </div>
       <div className="templateContainer">
-        
-
-        
-
         <div className="template_Container items-center justify-center grid relative grid-cols-[repeat(3,1fr)] mx-auto my-0 px-[5%] p-[2%] ">
           {hasilFilter.length > 0
             ? hasilFilter

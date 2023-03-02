@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="hero">
       <Navbar />  
       <div className="items-center justify-center w-full h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
-        <div className="lg:flex-row justify-start lg:justify-between items-center gap-5 mt-16 md:ml-52 md:mt-52">
+        <div className="lg:flex-row justify-start lg:justify-between items-center gap-5 mt-16 md:ml-40 md:mt-52">
           <div className="flex flex-col gap-5 lg:gap-5">
             <p className=" text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-medium">
               Give emotions <br className="lg:flex hidden"/> to your loved <br className="lg:flex hidden" /> ones

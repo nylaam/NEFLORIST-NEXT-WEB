@@ -1,29 +1,29 @@
 [
     {
-      "id": "1",
+      "id": 1,
       "name": "Nam Mug",
       "price": 83000,
-      "image": "products/gelas 1.jpg",
+      "image": "favorite/Flower 1.jpg",
       "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": "2022-07-24"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Viary Mug",
       "price": 149000,
-      "image": "products/gelas 2.jpg",
+      "image": "favorite/flower 2.jpg",
       "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": null
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Apollo Mug",
       "price": 181000,
-      "image": "products/gelas 3.jpg",
+      "image": "favorite/Flower 3.jpg",
       "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
       "isDeleted": false,
       "category": "Mug",

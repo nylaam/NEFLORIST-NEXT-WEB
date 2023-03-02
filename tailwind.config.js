@@ -21,6 +21,8 @@ module.exports = {
       clash: ["Clash Display", "sans-serif"],
       infinite: ["Outfit", "sans-serif"],
       bebasneo: ["Bebas Neue", "cursive"],
+      dancingscript: ["Dancing Script", "cursive"],
+      cormorant:[ 'Cormorant', 'serif'],
     },
     extend: {
       backgroundImage: {

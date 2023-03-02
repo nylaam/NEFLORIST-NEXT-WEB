@@ -32,6 +32,8 @@ function Card() {
       <div className="p-7 text-black z-[2] mt-20">
         <h1 className="text-3xl font-bold  text-center">Products</h1>
       </div>
+      
+
       <div className="templateContainer">
         <div className="searchInput_Container flex items-center justify-center mx-auto my-0 pt-5 ">
           <input
@@ -82,7 +84,7 @@ function Card() {
                       <img
                         src={item.image}
                         alt=""
-                        className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
+                        className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-7 rounded-[10px] border-solid border-black"
                       />
                       <h3 class="card-name font-bold mb-3">{item.name}</h3>
                       <p class="card-text ">{item.description}</p>
@@ -109,7 +111,6 @@ function Card() {
                       <h3 class="card-name">{val.name}</h3>
                       <p class="card-text">{val.description}</p>
                       <p className="price">Rp {val.price}</p>
-                      <button className="px-8 py-2 border">Book</button>
                     </div>
                   );
                 })}

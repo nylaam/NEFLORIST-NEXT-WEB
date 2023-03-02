@@ -1,136 +1,136 @@
 [
     {
-      "id": "1",
+      "id": 1,
       "name": "Nam Mug",
       "price": 83000,
-      "image": "products/gelas 1.jpg",
+      "image": "favorite/Flower 1.jpg",
       "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": "2022-07-24"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Viary Mug",
       "price": 149000,
-      "image": "products/gelas 2.jpg",
+      "image": "favorite/Flower 2.jpg",
       "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": null
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Apollo Mug",
       "price": 181000,
-      "image": "products/gelas 3.jpg",
+      "image": "favorite/Flower 3.jpg",
       "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": "2022-10-04"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "REN Mug",
       "price": 45000,
-      "image": "products/gelas 4.jpg",
+      "image": "favorite/Flower 4.jpg",
       "description": "Fusce consequat. Nulla nisl. Nunc nisl. Fusce consequat. Cras non velit nec nisi vulputate nonummy.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": null
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Envy Mug",
       "price": 199000,
-      "image": "products/gelas 5.jpg",
+      "image": "favorite/Flower 5.jpg",
       "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": null
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Mord Mug",
       "price": 487000,
-      "image": "products/gelas 6.jpg",
+      "image": "favorite/Flower 6.jpg",
       "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": "2022-12-09"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Hero Mug",
       "price": 451000,
-      "image": "products/gelas 7.jpg",
+      "image": "favorite/Flower 7.jpg",
       "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": "2022-11-04"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Ttier Mug",
       "price": 51000,
-      "image": "products/gelas 8.jpg",
+      "image": "favorite/Flower 8.jpg",
       "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
       "isDeleted": false,
       "category": "Mug",
       "expiryDate": null
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Jaay Plate",
       "price": 62000,
-      "image": "products/piring 1.jpg",
+      "image": "favorite/Flower 9.jpg",
       "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
       "isDeleted": false,
       "category": "Plate",
       "expiryDate": "2022-05-09"
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Sunoo Plate",
       "price": 105000,
-      "image": "products/piring 2.jpg",
+      "image": "favorite/Flower 10.jpg",
       "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
       "isDeleted": false,
       "category": "Plate",
       "expiryDate": "2022-12-23"
     },
     {
-      "id": "11",
+      "id": 11,
       "name": "Heese Plate",
       "price": 292000,
-      "image": "products/piring 3.jpg",
+      "image": "favorite/Flower 11.jpg",
       "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
       "isDeleted": false,
       "category": "Plate",
       "expiryDate": null
     },
     {
-      "id": "12",
+      "id": 12,
       "name": "Migyu Plate",
       "price": 289000,
-      "image": "products/piring 4.jpg",
+      "image": "favorite/Flower 12.jpg",
       "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
       "isDeleted": false,
       "category": "Plate",
       "expiryDate": "2022-06-18"
     },
     {
-      "id": "13",
+      "id": 13,
       "name": "Chaan Plate",
       "price": 93000,
-      "image": "products/piring 5.jpg",
+      "image": "favorite/Flower 13.jpg",
       "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
       "isDeleted": false,
       "category": "Plate",
       "expiryDate": null
     },
     {
-      "id": "14",
+      "id": 14,
       "name": "Lojee Plate",
       "price": 492000,
       "image": "products/piring 6.jpg",
@@ -140,7 +140,7 @@
       "expiryDate": "2022-09-29"
     },
     {
-      "id": "15",
+      "id": 15,
       "name": "Hueni Teapot",
       "price": 21000,
       "image": "products/teko 1.jpg",
@@ -150,7 +150,7 @@
       "expiryDate": null
     },
     {
-      "id": "16",
+      "id": 16,
       "name": "Beoom Teapot",
       "price": 447000,
       "image": "products/teko 2.jpg",
@@ -160,7 +160,7 @@
       "expiryDate": "2022-12-17"
     },
     {
-      "id": "17",
+      "id": 17,
       "name": "Oobin Teapot",
       "price": 277000,
       "image": "products/teko 3.jpg",
@@ -170,7 +170,7 @@
       "expiryDate": null
     },
     {
-      "id": "18",
+      "id": 18,
       "name": "Yonj Teapot",
       "price": 150000,
       "image": "products/teko 4.jpg",
@@ -180,7 +180,7 @@
       "expiryDate": "2022-05-18"
     },
     {
-      "id": "19",
+      "id": 19,
       "name": "Scoups Teapot",
       "price": 76000,
       "image": "products/teko 5.jpg",
@@ -190,7 +190,7 @@
       "expiryDate": null
     },
     {
-      "id": "20",
+      "id": 20,
       "name": "DK Teapot",
       "price": 367000,
       "image": "products/teko 6.jpg",

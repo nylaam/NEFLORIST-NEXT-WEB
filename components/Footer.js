@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="w-full">
       <div className="bg-[#fff5f1] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 lg:gap-1 px-20 py-10 items-center">
         <div className="items-center lg:items-start gap-5 pr-2">
-          <div className="font-semibold md:text-left text-center text-2xl">Ney FLorist </div>
+          <div className="font-semibold md:text-left text-center text-2xl font-cormorant">Ney FLorist </div>
         </div>
         <div className="flex flex-row md:ml-200 justify-center gap-8">
           <p className="text-center">
