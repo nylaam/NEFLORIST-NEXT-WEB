@@ -40,16 +40,10 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
-            <Link href='#values'>Values</Link>
+            <Link href='/favorite'>Favorite</Link>
           </li>
           <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
-            <Link href='#product'>Product</Link>
-          </li>
-          <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
-            <Link href='#moreinfo'>More Info</Link>
-          </li>
-          <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
-            <Link href='#contact'>Contact</Link>
+            <Link href='/about'>About</Link>
           </li>
         </ul>
 

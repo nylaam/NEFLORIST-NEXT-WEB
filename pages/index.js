@@ -1,9 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import MoreInfoModal from "../components/MoreInfoModal";
-import Product from "../components/Product";
-import Values from "../components/Values";
+import Product from "../components/Stock";
 
 export default function Home() {
   return (
@@ -20,14 +18,8 @@ export default function Home() {
       <section id="hero">
         <Hero />
       </section>
-      <section id="values">
-        <Values />
-      </section>
       <section id="product">
         <Product />
-      </section>
-      <section id="moreinfo">
-        <MoreInfoModal />
       </section>
       <section id="contact">
         <Footer />

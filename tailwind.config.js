@@ -16,13 +16,17 @@ module.exports = {
       },
     },
     fontFamily: {
-      monoton:["Monoton", "cursive"],
-      satoshi:['Satoshi', 'sans-serif'],
-      clash:['Clash Display', 'sans-serif'],
+      monoton: ["Monoton", "cursive"],
+      satoshi: ["Satoshi", "sans-serif"],
+      clash: ["Clash Display", "sans-serif"],
       infinite: ["Outfit", "sans-serif"],
-      bebasneo: ['Bebas Neue', 'cursive'],
+      bebasneo: ["Bebas Neue", "cursive"],
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern":
+          "url('https://img.freepik.com/free-photo/limonium-carnations-flowers-waffle-cones-isolated-white-background_23-2148066464.jpg?w=1060&t=st=1677718205~exp=1677718805~hmac=ca7b85d6c597632832672d051f621e2096c3969ae5e668175a65ba20917502bf')",
+      },
       boxShadow: {
         "3xl": "-1px 34px 47px -29px rgb(32 32 32 / 100%)",
         "4xl": " 0vw 0vw 0.5vw 0vw rgb(32 32 32 / 20%)",
@@ -30,7 +34,7 @@ module.exports = {
         glass: "1px 5px 12px 1px rgba( 31, 38, 135, 0.37 )",
         "glass-card": "4px 4px 4px 4px rgba( 32, 32, 32, 0.37 )",
         "card-shadow": "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-        "dark-shadow": "10px 10px 5px 0px rgba(130,130,130,0.75)"
+        "dark-shadow": "10px 10px 5px 0px rgba(130,130,130,0.75)",
       },
 
       colors: {
@@ -66,5 +70,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [ require("daisyui"),require('@tailwindcss/line-clamp')],
+  plugins: [require("daisyui"), require("@tailwindcss/line-clamp")],
 };

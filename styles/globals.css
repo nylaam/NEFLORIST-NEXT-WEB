@@ -2,9 +2,135 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
-    font-family: 'Clash Display', sans-serif;
-}
+
 html {
     scroll-behavior: smooth !important;
+    font-family: 'Clash Display', sans-serif;
+  }
+.custom-img {
+    background-image: url('https://img.freepik.com/free-photo/limonium-carnations-flowers-waffle-cones-isolated-white-background_23-2148066464.jpg?w=1060&t=st=1677718205~exp=1677718805~hmac=ca7b85d6c597632832672d051f621e2096c3969ae5e668175a65ba20917502bf')
+}
+
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Webkit */
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #b4aaa5;
+  }
+  
+  /* Mozilla */
+  ::-moz-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    border-radius: 10px;
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+  }
+  
+  /* Microsoft */
+  ::-ms-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  ::-ms-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+  }
+  
+  @media all and (max-width: 1000px) {
+    .templateContainer .template_Container {
+      margin: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .templateContainer .template_Container .template {
+      margin: 20px;
+      padding: 10px 30px;
+      border-radius: 30px;
+    }
+    .templateContainer {
+      margin: 12% 0;
+    }
+    .templateContainer .template_Container .template img {
+      margin-top: 40px;
+      margin-left: 30px;
+    }
+    .templateContainer .template_Container .template img:hover {
+      margin-top: 40px;
+      margin-left: 30px;
+      display: none;
+    }
+    .card-text {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* overflow-y: scroll; */
+    }
+    .card-text:hover {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      /* overflow-y: scroll; */
+    }
+    .templateContainer > .searchInput_Container input {
+      width: 67%;
+    }
+  }
+  
+  @media all and (max-width: 640px) {
+    .templateContainer .template_Container {
+      margin: 40px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .templateContainer .template_Container .template {
+      margin: 10px;
+      padding: 10px 24px;
+      border-radius: 30px;
+    }
+    .templateContainer {
+      margin: 25% 0;
+    }
+    .templateContainer .template_Container .template img {
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    .templateContainer .template_Container .template img:hover {
+      margin-top: 30px;
+      margin-left: 20px;
+      display: none;
+    }
+    .card-text {
+      -webkit-line-clamp: 2;
+      /* overflow-y: scroll; */
+    }
+    .card-text:hover {
+      -webkit-line-clamp: 10;
+      /* overflow-y: scroll; */
+    }
+    .templateContainer > .searchInput_Container input {
+      width: 50%;
+    }
+    .header-left h1 {
+      margin-left: 100px;
+    }
+    .header-left h1 {
+      margin-left: 100px;
+    }
   }
