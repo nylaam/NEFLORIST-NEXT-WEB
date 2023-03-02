@@ -35,6 +35,7 @@ function Stock() {
       <div>
         <Link href="/favorite" className="bg-[#d3829f] text-white p-4 rounded-lg items-end">See all
       </Link>
+
       </div>
       <div className="templateContainer">
         <div className="template_Container items-center justify-center grid relative grid-cols-[repeat(3,1fr)] mx-auto my-0 px-[5%] p-[2%] ">
@@ -56,8 +57,8 @@ function Stock() {
                         alt=""
                         className="h-[200px] w-[400px] border mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
                       />
-                      <h3 class="card-name font-bold mb-3">{item.name}</h3>
-                      <p class="card-text ">{item.description}</p>
+                      <h3 className="card-name font-bold mb-3">{item.name}</h3>
+                      <p className="card-text ">{item.description}</p>
                       <p className="price font-semibold mt-3">
                         Rp. {item.price}
                       </p>
@@ -78,8 +79,8 @@ function Stock() {
                   return (
                     <div className="template" key={val.id}>
                       <img src={val.image} alt="" />
-                      <h3 class="card-name">{val.name}</h3>
-                      <p class="card-text">{val.description}</p>
+                      <h3 className="card-name">{val.name}</h3>
+                      <p className="card-text">{val.description}</p>
                       <p className="price">Rp {val.price}</p>
                     </div>
                   );

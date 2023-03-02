@@ -21,8 +21,6 @@ const useLocalStorageReducer = (key = '', reducer, initialValue = null) => {
       firstRun.current = false;
       return;
     }
-
-    // Update local storage with new state
     try {
       window.localStorage.setItem(key, JSON.stringify(state));
     } catch (error) {

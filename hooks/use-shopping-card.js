@@ -13,11 +13,11 @@ const addItem = (state = {}, product = null, quantity = 0) => {
 
   let entry = state?.cartDetails?.[product.id];
 
-  // Update item
+  // for update item
   if (entry) {
     entry.quantity += quantity;
   }
-  // Add item
+  // for add item
   else {
     entry = {
       ...product,

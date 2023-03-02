@@ -2,7 +2,7 @@ import data from "../data.json";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-function Card() {
+function Favorite() {
   const [keyword, setKeyword] = useState("");
   const [hasilFilter, setHasilfilter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -55,9 +55,8 @@ function Card() {
                 onChange={(e) => setKeyword(e.target.value)}
               >
                 <option value="">All</option>
-                <option value="Mug">Mug</option>
-                <option value="Plate">Plate</option>
-                <option value="Teapot">Teapot</option>
+                <option value="Bouquet">Bouquet</option>
+                <option value="Unit">Unit</option>
               </select>
             </form>
           </div>
@@ -84,7 +83,7 @@ function Card() {
                       <img
                         src={item.image}
                         alt=""
-                        className="h-[200px] w-[200px] border mt-[5px] mb-5 mx-7 rounded-[10px] border-solid border-black"
+                        className="h-[200px] w-[200px] mb-5 mx-7 rounded-[10px]"
                       />
                       <h3 class="card-name font-bold mb-3">{item.name}</h3>
                       <p class="card-text ">{item.description}</p>
@@ -120,4 +119,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Favorite;

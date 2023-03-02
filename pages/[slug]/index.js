@@ -103,7 +103,7 @@ function Detail() {
                 height={16}
                 alt="Cart Icon"
               />
-              <span>Add to Cart ({qty})</span>
+              <span>ADD TO CART({qty})</span>
             </button>
           </div>
         </div>
