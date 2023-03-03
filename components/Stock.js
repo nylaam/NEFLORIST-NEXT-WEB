@@ -33,7 +33,7 @@ function Stock() {
         <h1 className="text-3xl font-bold text-center">Products</h1>
       </div>
       <div className="w-full">
-        <Link href="/favorite" className="bg-[#d3829f] text-white p-4 rounded-lg md:ml-[1327px] hover:transition-[0.4s] hover:shadow-[0_7px_30px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">See More
+        <Link href="/favorite" className="bg-[#d3829f] text-white p-4 rounded-lg md:ml-[1327px] ml-[260px] hover:transition-[0.4s] hover:shadow-[0_7px_30px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">See More
       </Link>
 
       </div>

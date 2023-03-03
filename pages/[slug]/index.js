@@ -4,8 +4,8 @@ import React, {useEffect, useState, useRef} from "react";
 import data from "../../data";
 import { Plus } from "../../components/Plus";
 import { Minus } from "../../components/Minus";
-import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 function getItems(id) {
   const item = data.find((e) => e.id === Number(id));
@@ -20,16 +20,14 @@ function Detail() {
   const { slug } = router.query;
   const barang = getItems(slug);
   console.log(data);
+  
+  const [qty, setQty] = useState(0);
+  const [adding, setAdding] = useState(false);
+  
+  
   if (Object.keys(barang).length === 1) {
     return <div>Item not found</div>;
   }
-
-  // const { cartCount, addItem } = useShoppingCart();
-  const [qty, setQty] = useState(0);
-  const [adding, setAdding] = useState(false);
-
-  // const toastId = useRef();
-  // const firstRun = useRef(true);
 
   const handleOnAddToCart = () => {
     setAdding(true);
@@ -38,10 +36,9 @@ function Detail() {
     );
     addItem(props, qty);
   };
-
   return (
     <main className="mt-[30px]">
-      <Navbar/>
+      <Navbar />
       <div className="h-screen flex justify-center items-center bg-cream">
         <div className="px-4 sm:px-0 w-[375px] sm:w-[600px] flex flex-col sm:grid sm:grid-cols-2">
           {/* TODO: Use Next Image to make images optimize in <picture></picture> HTML element */}
@@ -98,8 +95,8 @@ function Detail() {
             </div>
 
             <button type="button"
-                onClick={handleOnAddToCart}
-                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-black hover:bg-veryDarkBlue transition ease-in-out delay-75 rounded-lg">
+                // onClick={handleOnAddToCart}
+                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-[#d3829f]  hover:bg-veryDarkBlue transition ease-in-out delay-75 rounded-lg">
               <Image
                 src="/icon-cart.svg"
                 width={15}
@@ -111,7 +108,7 @@ function Detail() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 }

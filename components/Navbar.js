@@ -68,16 +68,10 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='#values'>Values</Link>
+              <Link href='/favorite'>Favorite</Link>
             </li>
             <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='#product'>Product</Link>
-            </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='#moreinfo'>More Info</Link>
-            </li>
-            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
-              <Link href='#contact'>Contact</Link>
+              <Link href='/about'>About</Link>
             </li>
           </ul>
         </div>
