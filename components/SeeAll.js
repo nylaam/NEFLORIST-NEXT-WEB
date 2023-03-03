@@ -1,6 +1,7 @@
 import data from "../data.json";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Favorite() {
   const [keyword, setKeyword] = useState("");
@@ -34,7 +35,7 @@ function Favorite() {
       </div>
 
       <div className="templateContainer">
-        <div className="searchInput_Container flex items-center justify-center mx-auto my-0">
+        <div className="searchInput_Container flex items-center justify-center mx-auto my-0 -mt-24">
           <input
             className="border w-3/12 p-2.5 rounded-[10px] border-solid border-black"
             id="searchInput"
@@ -76,7 +77,7 @@ function Favorite() {
                 .map((item) => (
                   <div>
                     <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
-                      <img
+                      <Image
                         src={item.image}
                         alt=""
                         className="h-[200px] w-[200px] mb-5 mx-7 rounded-[10px]"
@@ -111,7 +112,7 @@ function Favorite() {
                 .map((val) => {
                   return (
                     <div className="template" key={val.id}>
-                      <img src={val.image} alt="" />
+                      <Image src={val.image} alt="" />
                       <h3 class="card-name">{val.name}</h3>
                       <p class="card-text">{val.description}</p>
                       <p className="price">Rp {val.price}</p>

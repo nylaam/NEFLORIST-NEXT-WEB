@@ -1,6 +1,7 @@
 import data from "../stock.json";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Stock() {
   const [keyword, setKeyword] = useState("");
@@ -48,7 +49,8 @@ function Stock() {
                 )
                 .map((item) => (
                     <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
-                      <img
+                      <Image
+                        key={item.id}
                         src={item.image}
                         alt=""
                         className="h-[200px] w-[400px] border mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
@@ -82,7 +84,7 @@ function Stock() {
                 .map((val) => {
                   return (
                     <div className="template" key={val.id}>
-                      <img src={val.image} alt="" />
+                      <Image src={val.image} alt="" />
                       <h3 className="card-name">{val.name}</h3>
                       <p className="card-text">{val.description}</p>
                       <p className="price">Rp {val.price}</p>
