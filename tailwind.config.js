@@ -16,13 +16,15 @@ module.exports = {
       },
     },
     fontFamily: {
-      monoton: ["Monoton", "cursive"],
-      satoshi: ["Satoshi", "sans-serif"],
-      clash: ["Clash Display", "sans-serif"],
-      infinite: ["Outfit", "sans-serif"],
-      bebasneo: ["Bebas Neue", "cursive"],
       dancingscript: ["Dancing Script", "cursive"],
       cormorant:[ 'Cormorant', 'serif'],
+      Pinyon:['Pinyon Script','cursive'],
+      Zeyada:['Zeyada', 'cursive'],
+      Bilbo:['Bilbo Swash Caps', 'cursive'],
+      Carlo:['MonteCarlo', 'cursive'],
+      Greatviibes:['Great Vibes', 'cursive'],
+      Paris:['Parisienne', 'cursive'],
+      Tangerine:['Tangerine', 'cursive']
     },
     extend: {
       backgroundImage: {

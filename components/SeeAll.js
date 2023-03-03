@@ -32,7 +32,6 @@ function Favorite() {
       <div className="p-7 text-black z-[2] mt-20">
         <h1 className="text-3xl font-bold  text-center">Products</h1>
       </div>
-      
 
       <div className="templateContainer">
         <div className="searchInput_Container flex items-center justify-center mx-auto my-0 pt-5 ">
@@ -75,11 +74,8 @@ function Favorite() {
                     : products
                 )
                 .map((item) => (
-                  <Link
-                    href={`/${item.id}`}
-                    key={item.id}
-                  >
-                    <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
+                  <div>
+                    <div className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110 mb-20">
                       <img
                         src={item.image}
                         alt=""
@@ -87,11 +83,20 @@ function Favorite() {
                       />
                       <h3 class="card-name font-bold mb-3">{item.name}</h3>
                       <p class="card-text ">{item.description}</p>
-                      <p className="price font-semibold mt-3">
-                        Rp. {item.price}
-                      </p>
+                      <div className="flex flex-row gap-28 mt-4">
+                        <p className="price font-semibold my-3">
+                          Rp. {item.price}
+                        </p>
+                        <Link
+                          href={`/${item.id}`}
+                          key={item.id}
+                          className="bg-[#d3829f] p-2 w-16 h-10 text-center rounded text-white"
+                        >
+                          Detail
+                        </Link>
+                      </div>
                     </div>
-                  </Link>
+                  </div>
                 ))
             : data
                 .filter((val) => {

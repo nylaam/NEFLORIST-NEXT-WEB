@@ -4,6 +4,8 @@ import React, {useEffect, useState, useRef} from "react";
 import data from "../../data";
 import { Plus } from "../../components/Plus";
 import { Minus } from "../../components/Minus";
+import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 function getItems(id) {
   const item = data.find((e) => e.id === Number(id));
@@ -23,7 +25,7 @@ function Detail() {
   }
 
   // const { cartCount, addItem } = useShoppingCart();
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(0);
   const [adding, setAdding] = useState(false);
 
   // const toastId = useRef();
@@ -38,7 +40,8 @@ function Detail() {
   };
 
   return (
-    <main className="mt-[200px]">
+    <main className="mt-[30px]">
+      <Navbar/>
       <div className="h-screen flex justify-center items-center bg-cream">
         <div className="px-4 sm:px-0 w-[375px] sm:w-[600px] flex flex-col sm:grid sm:grid-cols-2">
           {/* TODO: Use Next Image to make images optimize in <picture></picture> HTML element */}
@@ -46,7 +49,7 @@ function Detail() {
             <picture>
               <source
                 className=""
-                srcSet="/gelas 1.jpg"
+                srcSet="/Flower 1.jpg"
                 media="(max-width: 639px)"
                 type="image/png"
               />
@@ -79,7 +82,7 @@ function Detail() {
               <div className="mt-1 flex items-center space-x-3">
                 <button
                   onClick={() => setQty(prev => prev - 1)}
-                  disabled={qty <= 1}
+                  disabled={qty <= 0}
                   className="disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-transparent disabled:hover:text-current hover:bg-rose-100 hover:text-rose-500 rounded-md p-1 border-0"
                 >
                   <Minus />
@@ -108,6 +111,7 @@ function Detail() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

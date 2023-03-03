@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Dancing+Script&family=Pinyon+Script&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Dancing+Script&family=Great+Vibes&family=MonteCarlo&family=Parisienne&family=Pinyon+Script&family=Tangerine&family=Zeyada&display=swap');
 
 html {
     scroll-behavior: smooth !important;

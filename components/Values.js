@@ -3,7 +3,7 @@ import React from "react";
 const Values = () => {
   return (
     <section id="values">
-      <div id="A1" className="container mx-auto py-20">
+      <div id="A1" className="container mx-auto py-20 mt-20">
       <p className="text-base lg:text-xl font-medium text-gray-500 text-center">
         WHY CHOOSE US ?
       </p>
