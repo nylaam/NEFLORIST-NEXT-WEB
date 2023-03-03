@@ -59,7 +59,7 @@ function Stock() {
                         key={item.id}
                         src={item.image}
                         alt=""
-                        className="h-[200px] w-[400px] border mt-[5px] mb-5 mx-1 rounded-[10px] border-solid border-black"
+                        className="h-[200px] w-[400px] mt-[5px] mb-5 mx-1 rounded-[10px]"
                       />
                       <h3 className="card-name font-bold mb-3">{item.name}</h3>
                       <p className="card-text ">{item.description}</p>
