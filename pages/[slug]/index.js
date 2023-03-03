@@ -37,8 +37,9 @@ function Detail() {
     addItem(props, qty);
   };
   return (
-    <main className="mt-[30px]">
-      <Navbar />
+    <>
+    <Navbar/>
+    <main className="mt-[36px]">
       <div className="h-screen flex justify-center items-center bg-cream">
         <div className="px-4 sm:px-0 w-[375px] sm:w-[600px] flex flex-col sm:grid sm:grid-cols-2">
           {/* TODO: Use Next Image to make images optimize in <picture></picture> HTML element */}
@@ -108,8 +109,10 @@ function Detail() {
           </div>
         </div>
       </div>
-      <Footer />
     </main>
+    <Footer />
+    </>
+    
   );
 }
 
