@@ -29,7 +29,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${color}` }}
       className='fixed left-0 top-0 w-screen z-10 ease-in duration-300'
     >
-      <div className='max-w-[1420px] m-auto flex justify-between items-center p-3 text-white'>
+      <div className='max-w-[1420px] m-auto flex justify-between items-center p-3 text-black'>
         <Link href='/'>
           <h1 style={{ color: `${textColor}` }} className='font-bold text-3xl font-cormorant'>
             BaRist
@@ -59,8 +59,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#ffcefe] text-center ease-in duration-300'
-              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#c39fba] text-center ease-in duration-300'
+              ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#fff5f1] text-center ease-in duration-300'
+              : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#ffcefe] text-center ease-in duration-300'
           }
         >
           <ul>
