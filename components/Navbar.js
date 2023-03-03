@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className='fixed left-0 top-0 w-full z-10 ease-in duration-300'
+      className='fixed left-0 top-0 w-screen z-10 ease-in duration-300'
     >
       <div className='max-w-[1420px] m-auto flex justify-between items-center p-3 text-white'>
         <Link href='/'>
@@ -36,15 +36,15 @@ const Navbar = () => {
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
-          <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
+          <li className="hover:text-[#e17ea0] text-sm md:text-base font-semibold p-4">
             <Link href='/'>Home</Link>
           </li>
-          <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
+          <li className="hover:text-[#e17ea0] text-sm md:text-base font-semibold p-4">
             <Link href='/favorite'>Favorite</Link>
           </li>
-          <li className="hover:text-[#a42b55] text-sm md:text-base font-semibold p-4">
+          <li className="hover:text-[#e17ea0] text-sm md:text-base font-semibold p-4">
             <Link href='/about'>About</Link>
-          </li>
+          </li> 
         </ul>
 
         {/* Mobile Button */}

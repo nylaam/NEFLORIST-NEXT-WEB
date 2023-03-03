@@ -30,14 +30,17 @@ function Stock() {
 
   return (
     <>
+    
       <div className="p-7 text-black z-[2] mt-8">
         <h1 className="text-3xl font-bold text-center">Products</h1>
       </div>
-      <div className="w-full">
-        <Link href="/favorite" className="bg-[#d3829f] text-white p-4 rounded-lg md:ml-[1327px] ml-[260px] hover:transition-[0.4s] hover:shadow-[0_7px_30px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">See More
+      <div className="flex items-end">
+        <Link href="/favorite" className="bg-[#d3829f] mr-8 ml-auto  text-white p-4 rounded-lg w-32  hover:transition-[0.4s] hover:shadow-[0_7px_30px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">See More
       </Link>
-
       </div>
+      
+      
+      
       <div className="templateContainer mb-20">
         <div className="template_Container items-center justify-center grid relative grid-cols-[repeat(4,1fr)] mx-auto my-0 px-[5%] p-[2%] ">
           {hasilFilter.length > 0
