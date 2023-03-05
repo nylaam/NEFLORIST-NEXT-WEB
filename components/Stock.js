@@ -34,8 +34,8 @@ function Stock() {
       <div className="p-7 text-black z-[2] mt-8">
         <h1 className="text-3xl font-bold text-center">Products</h1>
       </div>
-      <div className="flex items-end">
-        <Link href="/favorite" className="bg-[#d3829f] mr-8 ml-auto  text-white p-4 rounded-lg w-32  hover:transition-[0.4s] hover:shadow-[0_7px_30px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">See More
+      <div className="flex md:items-end w-full mx-auto">
+        <Link href="/favorite" className="text-center bg-[#d3829f] mx-auto md:mr-24 md:ml-auto text-white p-3 rounded-lg hover:transition-[0.4s] hover:shadow-[0_7px_30px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">See More
       </Link>
       </div>
       
@@ -52,14 +52,14 @@ function Stock() {
                 )
                 .map((item) => (
                     <div
-                    key={item.id} className="template bg-white border justify-center items-center m-5 p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
+                    key={item.id} className="template bg-white border justify-center items-center md:m-5 md:p-5 rounded-[10px] border-solid border-[#a7a7a7] hover:transition-[0.4s] hover:shadow-[0_10px_40px_0_rgba(0,0,0,0.4)] hover:z-[3] hover:scale-110">
                       <Image
                       width={1000}
                       height={1000}
                         key={item.id}
                         src={item.image}
                         alt=""
-                        className="h-[200px] w-[400px] mt-[5px] mb-5 mx-1 rounded-[10px]"
+                        className="md:h-[200px] md:w-[400px] md:mt-[5px] mb-5 md:mx-1 rounded-[10px] mx-auto"
                       />
                       <h3 className="card-name font-bold mb-3">{item.name}</h3>
                       <p className="card-text ">{item.description}</p>

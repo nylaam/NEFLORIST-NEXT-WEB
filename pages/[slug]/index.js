@@ -6,6 +6,7 @@ import { Plus } from "../../components/Plus";
 import { Minus } from "../../components/Minus";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Link from "next/link";
 
 function getItems(id) {
   const item = data.find((e) => e.id === Number(id));
@@ -95,17 +96,20 @@ function Detail() {
               </div>
             </div>
 
-            <button type="button"
-                // onClick={handleOnAddToCart}
-                disabled={adding} className="mt-4 sm:mt-6 flex space-x-2 justify-center items-center py-4 w-full text-xs text-white font-montserrat font-bold bg-[#d3829f]  hover:bg-veryDarkBlue transition ease-in-out delay-75 rounded-lg">
-              <Image
-                src="/icon-cart.svg"
-                width={15}
-                height={16}
-                alt="Cart Icon"
-              />
-              <span>ADD TO CART({qty})</span>
-            </button>
+            <div className="flex flex-row gap-2">
+                <button
+                  type="button"
+                  className="mt-8 border rounded py-1.5 px-6 bg-[#d3829f] border-[#b87f93] hover:border-[#bd6785] focus:ring-4 focus:ring-opacity-50 focus:ring-rose-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex flex-row"
+                >
+                  ADD TO CART ({qty})
+                </button>
+                <Link
+                  href="/favorite"
+                  className="mt-8 border rounded py-1.5 px-6 bg-gray-500 hover:text-gray-400 hover:bg-gray-100 border-gray-600 hover:border-gray-600 focus:ring-4 focus:ring-opacity-50 focus:ring-gray-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex felx-row items-center"
+                >
+                  BACK
+                </Link>
+              </div>
           </div>
         </div>
       </div>
