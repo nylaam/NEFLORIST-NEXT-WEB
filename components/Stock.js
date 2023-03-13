@@ -1,4 +1,4 @@
-import data from "../stock.json";
+// import data from "../stock.json";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,6 +7,8 @@ function Stock() {
   const [keyword, setKeyword] = useState("");
   const [hasilFilter, setHasilfilter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const [data, setData] = useState([])
 
   const handlefilter = (e) => {
     const filterData = data.filter((e) => {
@@ -27,6 +29,19 @@ function Stock() {
       return filtered + " Products ";
     }
   }
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const response = await fetch("https://api.jsonbin.io/v3/b/640ee17ac0e7653a0587007f");
+        const data = await response.json();
+        setData(data.record);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    getData();
+  }, []);
 
   return (
     <>

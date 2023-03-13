@@ -1,12 +1,15 @@
-import data from "../data.json";
+// import data from "../data.json";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+
 
 function Favorite() {
   const [keyword, setKeyword] = useState("");
   const [hasilFilter, setHasilfilter] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+
+  const [data, setData] = useState([])
 
   const handlefilter = (e) => {
     const filterData = data.filter((e) => {
@@ -27,6 +30,20 @@ function Favorite() {
       return filtered + " Products ";
     }
   }
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const response = await fetch("https://api.jsonbin.io/v3/b/640ed38cebd26539d08dbb9b");
+        const data = await response.json();
+        setData(data.record);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    getData();
+  }, []);
+
 
   return (
     <>
